@@ -6,7 +6,7 @@ package com.codeclan.listsquids;
 
 public class Squid {
 
-    private int size;
+    private Integer size;
     private String commonName;
     private String binomial;
 
@@ -16,7 +16,7 @@ public class Squid {
         this.binomial = binomial;
     }
 
-    public int getSize() {
+    public Integer getSize() {
         return size;
     }
 
