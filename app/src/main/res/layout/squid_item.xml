@@ -11,7 +11,7 @@
         android:textSize="30dp"
         android:textAlignment="center"
         android:layout_marginRight="10dp"
-        android:textColor="#bb00bb"
+        android:textColor="#bb00"
         />
 
     <LinearLayout
