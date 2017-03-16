@@ -15,7 +15,7 @@ public class SquidLister {
         list = new ArrayList<Squid>();
         list.add(new Squid(750, "Colossal squid", "Mesonychoteuthis hamiltoni"));
         list.add(new Squid(275, "Giant squid", "Architeuthis dux"));
-        list.add(new Squid(274, "Humboldt squid", "Dosidicus gigas"));
+        list.add(new Squid(275, "Humboldt squid", "Dosidicus gigas"));
         list.add(new Squid(3, "Pacific bigfin squid", "Magnapinna pacifica"));
         list.add(new Squid(2, "Strawberry squid", "Histiotheuthis heteropsis"));
         list.add(new Squid(1, "European squid", "Loligo vulgaris"));
