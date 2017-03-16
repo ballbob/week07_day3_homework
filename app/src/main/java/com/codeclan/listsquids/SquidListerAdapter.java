@@ -1,14 +1,11 @@
 package com.codeclan.listsquids;
 
 import android.content.Context;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -26,10 +23,15 @@ public class SquidListerAdapter extends ArrayAdapter<Squid> {
     public View getView(int position, View convertView, ViewGroup parent){
         View listItemView = convertView;
 
+        if (listItemView == null) {
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.squid_item, parent, false);
+        }
+
         Squid currentSquid = getItem(position);
 
-        TextView size = (TextView) listItemView.findViewById((R.id.size));
-        size.setText(currentSquid.getSize().toString());
+        TextView size = (TextView) listItemView.findViewById((R.id.squid_size));
+        String sizeText = currentSquid.getSize().toString();
+        size.setText(sizeText);
 
         TextView common_name = (TextView) listItemView.findViewById(R.id.common_name);
         common_name.setText(currentSquid.getCommonName());
